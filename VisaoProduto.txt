@@ -1,0 +1,32 @@
+Sistema de Gerenciamento de Biblioteca
+
+Para: Jadice
+Cujo: Controle sobre registros de livros e empréstimos na biblioteca
+O: +Livros
+É um: Sistema de gerenciamento
+Que: Permite cadastrar, consultar, editar e excluir dados sobre livros, autores e editoras.
+Diferentemente do: papel e planilhas Excel
+O nosso produto: Facilitar o registro e consulta de dados sobre os livros da biblioteca
+
+O que é
+- Sistema de gerenciamento (plataforma web ou app?)
+- Desktop
+
+O que não é
+- Aplicativo Android
+- Ambiente de interação entre usuários
+- Sistema de leitura de livros
+
+O que faz
+- Faz o CRUD livros/autores/editoras
+- Relaciona livros com autores e editoras
+- Registro de empréstimos e reserva de livros
+
+Camadas e responsabilidades
+model: representar dados
+data: gerenciar acesso aos dados
+service: regras de negócio e validações
+ui: interação com usuário
+
+Relacionamentos
+
