@@ -8,6 +8,12 @@ public class Editora {
     private String cnpj;
     private ArrayList<Livro> livros;
 
+    public Editora(String nome) {
+        this.nome = nome;
+        this.cnpj = "";
+        this.livros = new ArrayList<>();
+    }
+
     public Editora(String nome, String cnpj) {
         this.nome = nome;
         this.cnpj = cnpj;
