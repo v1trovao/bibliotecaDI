@@ -1,8 +1,12 @@
 package view;
 
+import service.LivroService;
+
 import javax.swing.*;
 
 public class MenuLivros {
+
+    LivroService service = new LivroService();
 
     public void exibir() {
         int opcao;
@@ -24,6 +28,8 @@ public class MenuLivros {
                     String titulo = JOptionPane.showInputDialog("Digite o título do livro:");
                     String nomeAutor = JOptionPane.showInputDialog("Digite o nome do autor:");
                     String nomeEditora = JOptionPane.showInputDialog("Digite o nome da editora:");
+                    service.cadastrarLivro(titulo, nomeAutor, nomeEditora);
+                    JOptionPane.showMessageDialog(null, "Livro cadastrado com sucesso!");
                     // OperacoesLivros.cadastrarLivro(catalogoLivros, catalogoAutores, catalogoEditoras);
                     break;
                 case 2:
