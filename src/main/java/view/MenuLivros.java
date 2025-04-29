@@ -36,10 +36,12 @@ public class MenuLivros {
                     // OperacoesLivros.atualizarLivro(catalogoLivros, catalogoAutores, catalogoEditoras);
                     break;
                 case 3:
-                    // OperacoesLivros.removerLivro(catalogoLivros);
+                    String tituloAtual = JOptionPane.showInputDialog("Digite o nome do livro que deseja remover: ");
+                    JOptionPane.showMessageDialog(null, service.removerLivro(tituloAtual));
                     break;
                 case 4:
-                    // OperacoesLivros.listarLivros(catalogoLivros);
+                    String lista = service.listarLivros();
+                    JOptionPane.showMessageDialog(null, lista);
                     break;
                 case 5:
                     // OperacoesLivros.emprestarLivro(catalogoLivros);
