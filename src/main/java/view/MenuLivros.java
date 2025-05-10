@@ -33,11 +33,16 @@ public class MenuLivros {
                     // OperacoesLivros.cadastrarLivro(catalogoLivros, catalogoAutores, catalogoEditoras);
                     break;
                 case 2:
+                    if (service.listarLivros() == null) {
+                        JOptionPane.showMessageDialog(null, "Sem dados para editar...");
+                    } else {
+                        String tituloAtual = JOptionPane.showInputDialog("Digite o nome do livro que deseja editar: \n" + service.listarLivros());
+                    }
                     // OperacoesLivros.atualizarLivro(catalogoLivros, catalogoAutores, catalogoEditoras);
                     break;
                 case 3:
-                    String tituloAtual = JOptionPane.showInputDialog("Digite o nome do livro que deseja remover: ");
-                    JOptionPane.showMessageDialog(null, service.removerLivro(tituloAtual));
+                    String tituloRemovido = JOptionPane.showInputDialog("Digite o nome do livro que deseja remover: ");
+                    JOptionPane.showMessageDialog(null, service.removerLivro(tituloRemovido));
                     break;
                 case 4:
                     String lista = service.listarLivros();

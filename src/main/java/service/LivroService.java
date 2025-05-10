@@ -47,12 +47,12 @@ public class LivroService {
             }
             return sb.toString();
         } else {
-            return "Sem dados...";
+            return null;
         }
     }
 
     // In progress
-    public void updateLivro(){
+    public void editarLivro(){
         return;
     }
 
