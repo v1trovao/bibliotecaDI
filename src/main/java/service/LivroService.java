@@ -52,8 +52,20 @@ public class LivroService {
     }
 
     // In progress
-    public void editarLivro(){
-        return;
+    public String editarLivro(String tituloAtual, String novoTitulo, String novoAutor, String novoEditora) {
+        Livro livroAtual = buscarLivroporTitulo(tituloAtual);
+
+        if (!novoTitulo.isEmpty()) {
+            livroAtual.setTitulo(novoTitulo);
+        }
+        if (!novoAutor.isEmpty()) {
+            livroAtual.setAutor(new Autor(novoAutor));
+        }
+        if (!novoEditora.isBlank()) {
+            livroAtual.setEditora(new Editora(novoEditora));
+        }
+
+        return "Livro editado com sucesso!";
     }
 
     // Função que recebe um título do livro e, se existe, remove da lista
@@ -73,6 +85,17 @@ public class LivroService {
         for (Livro livro : this.livros) {
             if (livro.getTitulo().equals(livroTitulo)) {
                 return livro;
+            }
+        }
+        return null;
+    }
+
+    // Função que faz a busca pelo título do livro, retorna o objeto encontrado ou nulo
+    // Verificar o uso de stream aqui
+    public String verDadosLivro(String livroTitulo) {
+        for (Livro livro : this.livros) {
+            if (livro.getTitulo().equals(livroTitulo)) {
+                return livro.toString();
             }
         }
         return null;

@@ -36,7 +36,17 @@ public class MenuLivros {
                     if (service.listarLivros() == null) {
                         JOptionPane.showMessageDialog(null, "Sem dados para editar...");
                     } else {
-                        String tituloAtual = JOptionPane.showInputDialog("Digite o nome do livro que deseja editar: \n" + service.listarLivros());
+                        String tituloAtual = JOptionPane.showInputDialog("Digite o nome do livro que deseja editar: \n"
+                                                                            + service.listarLivros());
+                        String tituloNovo = JOptionPane.showInputDialog(
+                                "Digite o novo título (ou deixe em branco para não alterar)");
+                        String autorNovo = JOptionPane.showInputDialog(
+                                "Digite o novo autor (ou deixe em branco para não alterar)");
+                        String editoraNovo = JOptionPane.showInputDialog(
+                                "Digite a nova editora (ou deixe em branco para não alterar)");
+                        service.editarLivro(tituloAtual, tituloNovo, autorNovo, editoraNovo);
+
+
                     }
                     // OperacoesLivros.atualizarLivro(catalogoLivros, catalogoAutores, catalogoEditoras);
                     break;
