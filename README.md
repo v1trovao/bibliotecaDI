@@ -63,5 +63,3 @@ Este sistema de biblioteca é um projeto em Java com foco em práticas de progra
 
 ---
 
-- Projeto refeito como exercício de revisão pessoal
-
