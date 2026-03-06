@@ -2,7 +2,7 @@
 
 ### 🧠 Visão Geral
 
-Este sistema de biblioteca é um projeto em Java com foco em práticas de programação orientada a objetos e separação de responsabilidades. Ele permite gerenciar **livros, autores e editoras** por meio de funcionalidades CRUD (criar, ler, atualizar e deletar), além de realizar operações de empréstimo, devolução e reserva de livros.
+Este sistema de biblioteca é um projeto em Java com foco em práticas de programação orientada a objetos e separação de responsabilidades. Ele permite gerenciar **livros, autores e editoras** por meio de funcionalidades CRUD (criar, ler, atualizar e deletar), além de realizar serviços que simulam operações de empréstimo, devolução e reserva de livros.
 
 ---
 
