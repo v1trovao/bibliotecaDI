@@ -1,4 +1,4 @@
-## Library-Web
+## Sistema de Biblioteca
 
 ### Sobre
 
@@ -21,12 +21,12 @@ além de realizar operações de empréstimo, devolução e reserva de livros.
 
 ### 🔄 Funcionalidades
 
-- Gestão do Acervo: Os bibliotecários podem cadastrar e gerenciar dados de 
+- **Gestão do Acervo**: Os bibliotecários podem cadastrar e gerenciar dados de 
 livros, autores e editoras pela plataforma, com uso do ISBN.
-- Importar/Exportar Dados: O sistema permite carregar dados em arquivos para facilitar cadastro e transferências.
-- Consultar livros: Acesso ao acervo e informações sobre os livros e publicações.
-- Emprestar e Devolver Livros: Usuários podem solicitar empréstimo e devolver livros diretamente no sistema
-- Reservar Livros: Caso o livro esteja indisponível, o usuário consegue reservar e ser notificado caso o livro já esteja disponível
+- **Importar/Exportar Dados**: O sistema permite carregar dados em arquivos para facilitar cadastro e transferências.
+- **Consultar livros**: Acesso ao acervo e informações sobre os livros e publicações.
+- **Emprestar e Devolver Livros**: Usuários podem solicitar empréstimo e devolver livros diretamente no sistema
+- **Reservar Livros**: Caso o livro esteja indisponível, o usuário consegue reservar e ser notificado caso o livro já esteja disponível
 
 ### ▶️ Como Executar
 
